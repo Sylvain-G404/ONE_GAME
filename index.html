@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/galaxie.css">
+    <title>
+        <$$<ONE_GAME>$$>
+    </title>
+</head>
+
+<body>
+    <header>
+        <h1>KI.IR.RA</h1>
+    </header>
+    <section class="galaxie">
+        <div class="systhem i2r1-soleil">
+            <span class="planet i2">
+                <span class="ombre gauche"></span>
+            </span>
+            <span class="planet r1">
+                <span class="ombre droite"></span>
+            </span>
+            <span class="soleil"></span>
+        </div>
+        <section class="jeux">
+            <h2>Jusqu'oû<br />Irez-Vous</h2>
+            <p>Tu à<br /><br /><br /><span class="banc">0</span></p>
+            <br />
+            <table id="tablo">
+                <tr id="ligne">
+                    <td id="cellule">
+                        <button id="btn" type="button" class="manager" onclick="engager()">
+                            <span id="managerActive"></span>
+                            Manager<span id="onOff" class="onOff">1000</span>
+                        </button>
+                    </td>
+                </tr>
+                <tr id="ligne">
+                    <td id="cellule">
+                        <button id="btn" type="button" onclick="addOne()">
+                            Tu clic tu gagner<span class="gain">1</span>
+                        </button>
+                    </td>
+                </tr>
+                <tr id="ligne">
+                    <td id="cellule">
+                        <button id="btn" type="button" onclick="paye()">
+                            Pour<span id="somme" class="somme">10</span> double tes gain
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </section>
+
+    <footer>
+        <h1>INFINITY</h1>
+    </footer>
+</body>
+<script src="./JS/jeuxClic.js"></script>
+
+</html>

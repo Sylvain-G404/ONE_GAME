@@ -1,0 +1,158 @@
+:root {
+    --ma-TimeRotate: 19s;
+    /* var(--ma-TimeRotate); */
+}
+
+@font-face {
+    font-family: "Old Japanese";
+    src: url("../Police/Old Japanese.otf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: auto;
+    padding: auto;
+}
+
+body {
+    background-color: black;
+
+    color: rgb(255, 0, 0);
+
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    margin-left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    font-size: x-large;
+}
+
+footer {
+    margin-left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    font-size: x-large;
+}
+
+.galaxie {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.systhem {
+    position: relative;
+
+    border: 1px solid rgba(255, 0, 0, 0);
+
+    border-radius: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    animation: systhemTourne var(--ma-TimeRotate) linear infinite;
+}
+
+@keyframes systhemTourne {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.i2r1-soleil {
+    width: 250px;
+    height: 200px;
+}
+
+.planet {
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 0.01px;
+    border-color: rgb(0, 0, 0);
+
+    position: absolute;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.i2,
+.r1 {
+    width: 20px;
+    height: 20px;
+}
+
+.i2 {
+    top: 50%;
+    left: 0%;
+
+    transform:
+        translateY(-50%) translateX(-50%);
+}
+
+.r1 {
+    top: 50%;
+    right: 0%;
+
+    transform:
+        translateY(-50%) translateX(50%);
+}
+
+.ombre {
+    width: 10px;
+    height: 20px;
+}
+
+.gauche {
+    transform: translateX(-50%);
+
+    background: linear-gradient(to left, white 5%, gray 50%, black 90%);
+}
+
+.droite {
+    transform: translateX(50%);
+    background: linear-gradient(to right, white 5%, gray 50%, black 90%);
+}
+
+.soleil {
+    position: relative;
+
+    background-color: white;
+
+    border-radius: 100%;
+
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

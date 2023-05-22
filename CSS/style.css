@@ -1,0 +1,111 @@
+/********* JEUX ***************/
+.jeux {
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 80%;
+    height: 55%;
+}
+h1 {
+    font-family: "Old Japanese";
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline 2px red;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+    height: 100px;
+    font-size: 20px;
+}
+
+span {
+    margin: 0 4px;
+}
+
+#tablo {
+    width: 90%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 2px;
+}
+
+#ligne {
+    height: 30px;
+}
+
+#cellule {
+    padding: 2px;
+}
+
+.bonus {
+    display: block;
+}
+
+#onOff {
+    color: red;
+}
+
+.somme {
+    color: red
+}
+
+.gain {
+    color: green;
+}
+
+#btn {
+    border-radius: 10px / 5px;
+
+    position: relative;
+
+    display: flex;
+
+    padding: 0 5px;
+}
+
+#managerActive {
+    position: absolute;
+
+    z-index: -0;
+
+    background: linear-gradient(red, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0) 90%, green);
+
+    border-style: double;
+    border-radius: 10px / 5px;
+    border-width: 2px 0 2px 0;
+    border-top-color: red;
+    border-bottom-color: green;
+
+    left: 0;
+
+    width: 0%;
+    height: 100%;
+}
+
+.managerActive {
+    animation: managerActiver 10s linear infinite;
+}
+
+@keyframes managerActiver {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
