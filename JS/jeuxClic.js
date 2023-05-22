@@ -33,7 +33,7 @@ function paye() {
         document.querySelector(".gain").innerHTML = gain;
         document.querySelector(".somme").innerHTML = somme;
     } else {
-        alert("Vous n'avez pas asser d'argent.\nIl vous manque " + (somme - banc) + "€")
+        alert("Vous n'avez pas asser d'argent.\nIl vous manque " + (somme - banc))
     }
 }
 
@@ -49,7 +49,7 @@ function engager() {
             compteur++;
         }, intervalle);
     } else {
-        alert("Vous n'avez pas asser d'argent.\nIl vous manque " + (onOff - banc) + "€")
+        alert("Vous n'avez pas asser d'argent.\nIl vous manque " + (onOff - banc))
     }
 }
 
