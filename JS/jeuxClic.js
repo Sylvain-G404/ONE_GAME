@@ -10,7 +10,6 @@ for (i = 0; i < button.length; i++) {
     button[i].addEventListener("click", verifierSomme);
 }
 
-
 function addOne() {
     banc = gain + banc;
     document.querySelector(".banc").innerHTML = banc;
@@ -37,7 +36,6 @@ function paye() {
     }
 }
 
-
 // GPT
 function engager() {
     if (managerActive()) {
@@ -53,7 +51,6 @@ function engager() {
     }
 }
 
-
 // MOI 
 // function engager() {
 //     if (managerActive) {
@@ -68,7 +65,6 @@ function engager() {
 //     }
 // }
 
-
 function managerActive() {
     if (banc >= onOff) {
         banc = banc - onOff;
@@ -82,7 +78,6 @@ function managerActive() {
         return false
     }
 }
-
 
 function verifierBanc() {
     if (banc >= onOff) {
@@ -103,5 +98,3 @@ function verifierSomme() {
         valide.style.color = "red";
     }
 }
-
-
